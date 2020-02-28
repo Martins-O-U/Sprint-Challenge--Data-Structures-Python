@@ -23,6 +23,11 @@ for name_2 in names_2:
 end_time = time.time()
 print(f"{len(duplicates)} duplicates:\n\n{', '.join(duplicates)}\n\n")
 print(f"runtime: {end_time - start_time} seconds")
+
+# original run time was a polynomial "0(n ** 2)"" due to the use of double for loop:
+# runtime now is 0(n) is it only does a constant action of append and insert
+
+
 # ---------- Stretch Goal -----------
 # Python has built-in tools that allow for a very efficient approach to this problem
 # What's the best time you can accomplish with no restrictions on techniques or data
